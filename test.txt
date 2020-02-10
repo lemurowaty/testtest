@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lekcja;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Admin
+ */
+public class Samochod {
+    
+
+        public static void main(String[] args) throws IOException {
+        
+        //System.in.read();
+           // System.out.println("W strumieniu jest: " + System.in.available());
+            
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj pierwsza liczbe : ");
+        double pierwsza = scanner.nextDouble();
+        System.out.println("Podaj druga liczbe : ");
+        double druga = scanner.nextDouble();
+        scanner.nextLine();
+         
+        System.out.println("Dodawanie dwóch liczb - wcisnij +");
+        System.out.println("Odejmowanie dwóch liczb - wcisnij -");
+        System.out.println("Mnozenie dwóch liczb - wcisnij *");
+        System.out.println("Dzielenie dwóch liczb - wcisnij /");
+        
+        String znak = scanner.nextLine();
+        
+        switch (znak)
+        {
+            case "+" :
+            {
+                System.out.println(pierwsza - druga);
+                break;
+            }
+            case "-" :
+            {
+                System.out.println(pierwsza - druga);
+                break;
+            }
+            case "*" :
+            {
+                System.out.println(pierwsza * druga);
+                break;
+            }
+            case "/" :
+                    System.out.println(pierwsza / druga);
+        
+        
+        
+        }
+       
+        
+          
+            
+        }
+    
+}
