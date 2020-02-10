@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Samochod {
+public class Auto{
     
 
         public static void main(String[] args) throws IOException {
@@ -29,8 +29,6 @@ public class Samochod {
          
         System.out.println("Dodawanie dwóch liczb - wcisnij +");
         System.out.println("Odejmowanie dwóch liczb - wcisnij -");
-        System.out.println("Mnozenie dwóch liczb - wcisnij *");
-        System.out.println("Dzielenie dwóch liczb - wcisnij /");
         
         String znak = scanner.nextLine();
         
@@ -52,6 +50,8 @@ public class Samochod {
                 break;
             }
             case "/" :
+                    System.out.println(pierwsza / druga);
+  case "/" :
                     System.out.println(pierwsza / druga);
         
         
